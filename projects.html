@@ -1,21 +1,54 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <h1>About me</h1>
-        <a href="index.html">About me</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact me</a>
-        <a href="interests.html">Interests</a>
+        <style type="text/CSS">
+            .navbar {
+                height: 100px;
+                width: 100%;
+                position: sticky;
+                top: 0;
+                margin-bottom: 20px;
+                background-color: rgb(181, 222, 91);
+                padding: 10px;
+                text-align: center;
+            }
+            
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+
+            @media only screen and (max-device-width: 480px) {
+                .navbar {
+                    font-size: 20px;
+                    height: 130px;
+                }
+                img {
+                    width: 500px;
+                    height: 600px;
+                }
+                div {
+                    font-size: larger;
+                }
+            }
+
+        </style>
+
     </head>
     <body>
-        <p>Project1:</p>
-        <p>Project2:</p>
+        <div class="navbar"><h1>Here is Miranda Lyu</h1>
+            <a href="index.html">About me</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact me</a>
+            <a href="interests.html">Interests</a>
+        </div>
+        <div class="container">
+        <div>Project 1: Theater Reservation System</div>
+        <div><img src="theater.png" width="400" height="500"></div>
+        <div>Project 2: Self-designed Unix Shell</div>
+        </div>
     </body>
-
-
-
-
-
-
 
 </html>

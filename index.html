@@ -1,21 +1,65 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <h1>About me</h1>
-        <a href="index.html">About me</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact me</a>
-        <a href="interests.html">Interests</a>
+        <meta charset="UTF-8">
+        <style type="text/CSS">
+            .navbar {
+                height: 100px;
+                width: 100%;
+                position: sticky;
+                top: 0;
+                margin-bottom: 20px;
+                background-color: rgb(181, 222, 91);
+                padding: 10px;
+                text-align: center;
+            }
+
+            .photo {
+                margin-top: 40px;
+                text-align: center;
+            }
+
+            dl {
+                text-align: center;
+                margin-top: 50px;
+                font-size: small;
+            }
+
+            @media only screen and (max-device-width: 480px) {
+                .navbar {
+                    font-size: 20px;
+                    height: 130px;
+                }
+                img {
+                    width: 500px;
+                    height: 600px;
+                }
+                dl {
+                    font-size: larger;
+                }
+            }
+        </style>
+
+
     </head>
     <body>
-        <p>Miranda Lyu
-        Northeastern University CS Align</p>
+        <div class="navbar"><h1>Here is Miranda Lyu</h1>
+            <a href="index.html">About me</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact me</a>
+            <a href="interests.html">Interests</a>
+        </div>
+        <div class="photo">
+        <img src="portrait.JPG" width="320" height="400"></div>
+        <dl>
+            <dt>&#128214;</dt>
+            <dd>- currently studying Master of Computer Science Align</dd>
+                <dd>at Northeastern University (Seattle campus)</dd>
+            <dt>&#128421;</dt>
+            <dd>- seeking for SDE internship right now</dd>
+        </dl>
+
+
     </body>
-
-
-
-
-
-
 
 </html>
